@@ -1,0 +1,70 @@
+@use '../variables'
+@use '../mixins'
+    
+#projects-page
+    margin: 2rem auto 2rem
+    background-color: variables.$bg-color
+    border-radius: variables.$container-border-radius
+    padding: 2rem 2rem .5rem
+    max-width: 90%
+
+    .title
+        color: variables.$text-color
+        font-size: 2.5rem
+        margin: .5rem 0rem 3rem
+        @include mixins.center
+        justify-content: center
+        gap: 1rem
+
+        &:after
+            @include mixins.gradient-border
+        
+        &:before
+            @include mixins.gradient-border-reverse
+
+    .projects-card
+        margin: 2rem 1rem 8rem
+        display: flex
+        gap: 8rem
+        align-items: center
+        
+        h2, a
+            display: flex
+            justify-content: center      
+
+        span
+            font-weight: bold      
+            
+
+        h2
+            color: variables.$text-color
+            margin-bottom: 2rem
+        
+        p
+            color: variables.$text-color-secondary
+            line-height: 1.5rem
+            margin-bottom: .5rem
+            text-align: justify
+
+
+        a
+            background-image: linear-gradient(90deg, rgba(250,82,82,1) 0%, rgba(221,36,118,1) 98%)
+            -webkit-background-clip: text
+            -moz-background-clip: text
+            background-clip: text
+            color: transparent
+            
+
+        
+        img
+            width: 45%
+            height: auto
+            border-radius: variables.$container-border-radius
+
+    .card-reverse
+        flex-direction: row-reverse
+
+    .m-1
+        margin-bottom: 2rem
+
+            

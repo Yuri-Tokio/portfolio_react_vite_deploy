@@ -1,0 +1,57 @@
+@use '../variables'
+@use '../mixins'
+    
+#certificados-page
+    margin: 3rem
+    background-color: variables.$bg-color
+    border-radius: variables.$container-border-radius
+    padding: 2rem
+    max-width: 100%
+
+    .title
+        color: variables.$text-color
+        font-size: 2.5rem
+        margin: 1.5rem 
+        @include mixins.center
+        justify-content: center
+        gap: 1rem
+
+        &:after
+            @include mixins.gradient-border
+        
+        &:before
+            @include mixins.gradient-border-reverse
+
+    .certificados-grid div
+        width: 31%
+        display: flex
+        flex-direction: column
+
+    .certificados-grid
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        gap: 1rem
+            
+        .certificados-card
+            align-items: center
+            text-align: center
+            margin: 0.5rem
+            
+            h2
+                color: #FFF
+
+            @media (min-width: 1680px) 
+
+                img
+                    width: 100%
+                    height: 100%
+                    padding: 2rem
+            
+            @media (min-width: 1280px) and (max-width: 1600px)
+
+                img
+                    width: 400px
+                    height: 282px
+                    padding: 2rem
+        
