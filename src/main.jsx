@@ -14,7 +14,7 @@ import ProjectsPage from './pages/ProjectsPage';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/portfolio_react_vite_deploy/",
     element: <HomePage />,
   },
   {

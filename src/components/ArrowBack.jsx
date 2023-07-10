@@ -11,7 +11,7 @@ const ArrowBack = () => {
     const navigate = useNavigate();
 
     const goToBack = () => {
-        navigate("/");
+        navigate("/portfolio_react_vite_deploy/");
     }
     return (
         <section id="arrow-back">
