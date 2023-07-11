@@ -2,7 +2,6 @@
 @use '../mixins'
     
 .technologies-container
-    @include mixins.responsive-technologiescontainer
     margin-top: 2rem
 
     .technologies-grid
@@ -16,17 +15,26 @@
         padding: 1rem
         border: 1px solid #333
         border-radius: variables.$card-border-radius 
+
         
         h3
             color: variables.$text-color
             margin-bottom: 1rem
 
-        p
-            text-align: justify
-
         svg
             font-size: 6.5rem
 
+        @media screen and (min-width: 250px)
+            width: 100%
+
+        @media screen and (min-width: 900px)
+            width: 46%
+            
+        @media screen and (min-width: 1220px)
+            width: 47%
+
+        @media screen and (width: 1024px)
+            width: 46%
 
     #html
         svg
