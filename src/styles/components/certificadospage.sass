@@ -2,9 +2,9 @@
 @use '../mixins'
     
 #certificados-page
-    margin: 3rem
     background-color: variables.$bg-color
     border-radius: variables.$container-border-radius
+    margin: 3rem
     padding: 2rem
     max-width: 100%
 
@@ -39,19 +39,43 @@
             margin: 0.5rem
             
             h2
-                color: #FFF
+                color: variables.$text-color
 
-            @media (min-width: 1680px) 
+    @media (min-width: 1303px) 
 
-                img
-                    width: 100%
-                    height: 100%
-                    padding: 2rem
-            
-            @media (min-width: 1280px) and (max-width: 1600px)
+        img
+            width: 100%
+            height: auto
+            padding: 2rem
 
-                img
-                    width: 400px
-                    height: 282px
-                    padding: 2rem
-        
+    @media (max-width: 1302px)
+
+        .certificados-grid div
+            width: 40%
+            display: flex  
+
+        .certificados-grid
+            justify-content: center
+
+        img
+            width: 100%
+            height: auto
+            padding: 2rem
+
+    @media (max-width: 999px)
+
+        .certificados-grid div
+            width: 100%
+            display: flex
+
+        .certificados-grid 
+            justify-content: center
+
+        img
+            width: 80%
+            height: auto
+    
+    @media (max-width: 500px)
+        img
+            width: 100%
+            height: auto
