@@ -43,7 +43,7 @@ const ProjectsPage = () => {
                         <h2>Lista de tarefas</h2>
                         <p>Lista de tarefas responsiva que aborda tecnologias do React Js e do Node.Js. Este projeto conta com uma api rodando em um servidor local para criação, alteração e exclusão dos dados informados</p>
                         <p><span>Tecnologias utilizadas:</span> React, Vite, API e Banco Locais</p>
-                        <a href="https://yuri-tokio.github.io/react-tasklist" target="_blank">Saber mais</a>
+                        <a href="https://github.com/Yuri-Tokio/react-tasklist" target="_blank">Saber mais</a>
                     </div>
                 </div>
                 <div className="projects-card card-reverse m-1">
