@@ -23,3 +23,11 @@
     background: variables.$gradient-reverse
     height: 3px
     width: 30%
+
+@mixin responsive-technologiescontainer
+    .technology-card
+        @media screen and (min-width: 250px) and (max-width: 999px)
+            width: 100%
+        
+        @media screen and (min-width: 1000px)
+            width: 47%
