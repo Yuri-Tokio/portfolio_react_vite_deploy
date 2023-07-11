@@ -3,19 +3,21 @@
     
 #information
     @include mixins.center
-    flex-direction: column
     background-color: variables.$bg-color-secondary
-    padding: 1rem
+    border-radius: variables.$card-border-radius
     margin-bottom: 2rem
+    padding: 1rem 1.8rem
     text-align: left
     width: 80%
-    border-radius: variables.$card-border-radius
+    
+    .info-grid
+        display: flex
+        flex-wrap: wrap
 
     .info-card
         @include mixins.center
         justify-content: start
-        gap: 1rem
-        padding-bottom: .8rem
+        gap: .8rem
         margin-bottom: .8rem
         border-bottom: 1px solid #444
         width: 100%
@@ -31,10 +33,10 @@
 
         svg
             background-color: variables.$bg-color
-            padding: 0.4rem
+            border-radius: variables.$card-border-radius
+            padding: 5px
             width: 2rem
             height: 2rem
-            border-radius: variables.$card-border-radius
 
         #phone-icon
             color: #e93b81
