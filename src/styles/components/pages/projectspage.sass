@@ -1,12 +1,12 @@
-@use '../variables'
-@use '../mixins'
+@use '../../variables'
+@use '../../mixins'
     
 #projects-page
-    margin: 2rem auto 2rem
     background-color: variables.$bg-color
     border-radius: variables.$container-border-radius
-    padding: 2rem 2rem .5rem
-    max-width: 90%
+    margin: 3rem
+    padding: 2rem
+    max-width: 100%
 
     .title
         color: variables.$text-color
@@ -22,19 +22,30 @@
         &:before
             @include mixins.gradient-border-reverse
 
+    .img100
+        width: 500px
+
+        img
+            width: 100%
+            height: auto
+            border-radius: variables.$container-border-radius
+
     .projects-card
         margin: 2rem 1rem 8rem
-        display: flex
-        gap: 8rem
         align-items: center
-        
+        gap: 3rem
+        width: 100%
+        display: flex
+
+    .projects-info
+        width: 45%
+    
         h2, a
             display: flex
             justify-content: center      
 
         span
             font-weight: bold      
-            
 
         h2
             color: variables.$text-color
@@ -53,15 +64,16 @@
             background-clip: text
             color: transparent
             
-        img
-            width: 45%
-            height: auto
-            border-radius: variables.$container-border-radius
 
     .card-reverse
         flex-direction: row-reverse
 
     .m-1
         margin-bottom: 2rem
+
+    @media screen and (min-width: 913px)
+        img
+            min-width: 320px
+            margin: auto
 
             

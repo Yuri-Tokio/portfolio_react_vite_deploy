@@ -1,6 +1,6 @@
 import HomePage from "./pages/HomePage";
 
-import "./styles/components/HomePage.sass";
+import "./styles/components/pages/HomePage.sass";
 
 function App() {
 

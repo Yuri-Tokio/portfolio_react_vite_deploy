@@ -1,7 +1,7 @@
 import MainContent from "./../components/MainContent";
 import Sidebar from "./../components/Sidebar";
 
-import "./../styles/components/homepage.sass";
+import "./../styles/components/pages/homepage.sass";
 
 function HomePage() {
 

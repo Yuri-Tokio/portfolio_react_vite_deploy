@@ -1,4 +1,4 @@
-import "../styles/components/certificadospage.sass";
+import "../styles/components/pages/certificadospage.sass";
 
 import Web_Responsive from "../img/certificados/Responsive_Web_Development.png";
 import Wordpress from "../img/certificados/Wordpress_na_pratica.png";
