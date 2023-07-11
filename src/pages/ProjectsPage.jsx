@@ -43,7 +43,7 @@ const ProjectsPage = () => {
                         <h2>Lista de tarefas</h2>
                         <p>Lista de tarefas responsiva que aborda tecnologias do React Js e do Node.Js. Este projeto conta com uma api rodando em um servidor local para criação, alteração e exclusão dos dados informados</p>
                         <p><span>Tecnologias utilizadas:</span> React, Vite, API e Banco Locais</p>
-                        <a href="https://github.com/Yuri-Tokio/react-tasklist" target="_blank">Saber mais</a>
+                        <a href="https://yuri-tokio.github.io/react-tasklist" target="_blank">Saber mais</a>
                     </div>
                 </div>
                 <div className="projects-card card-reverse m-1">
@@ -52,7 +52,7 @@ const ProjectsPage = () => {
                         <h2>Template Curriculum vitae</h2>
                         <p>Template responsivo criado por mim de um projeto pessoal desenvolvido com tecnologias como React e SASS, além de conter meu curriculo em pdf</p>
                         <p><span>Tecnologias utilizadas:</span> React, Vite, SASS</p>
-                        <a href="https://github.com/Yuri-Tokio/CV" target="_blank">Saber mais</a>
+                        <a href="https://yuri-tokio.github.io/CV/" target="_blank">Saber mais</a>
                     </div>
                 </div>
             </div>
