@@ -34,7 +34,7 @@ const ProjectsPage = () => {
                         <h2>Biblioteca de filmes</h2>
                         <p>Uma biblioteca dos mais diversos filmes e animações desenvolvido para pesquisas e analises de dados com funcionalidades puramente observatórias e que abordam conceitos como Gerenciamento de API do TMDB, responsividade e desenvolvimento com diversos recursos do React</p>
                         <p><span>Tecnologias utilizadas:</span> React, Vite, API (TMDB)</p>
-                        <a href="https://github.com/Yuri-Tokio/movies_lib" target="_blank">Saber mais</a>
+                        <a href="https://yuri-tokio.github.io/movies_lib/" target="_blank">Saber mais</a>
                     </div>
                 </div>
                 <div className="projects-card">
