@@ -7,16 +7,12 @@
     margin: 3rem
     padding: 2rem
     max-width: 100%
-    min-width: 600px
-
-    @media (max-width: 768px) 
-        margin: .5rem
-        padding: .5rem
+    min-width: 620px
 
     .title 
         color: variables.$text-color
         font-size: 2.5rem
-        margin: 0.5rem 0 3rem
+        margin: .8rem
         @include mixins.center
         justify-content: center
         gap: 1rem
@@ -26,60 +22,51 @@
 
         &:before 
             @include mixins.gradient-border-reverse
-        
-        @media (max-width: 768px) 
-            font-size: 2rem
-        
-    .img100 
-        width: 45%
-        min-width: 250px
+    
+    .projects-grid
+        @include mixins.center
+        flex-wrap: wrap
+        gap: 2rem
 
-        img 
+        .projects-card
+            @include mixins.center
+            justify-content: start
+            flex-wrap: wrap
+            padding: 1rem
+            border-radius: variables.$card-border-radius 
             width: 100%
-            height: auto
-            border-radius: variables.$container-border-radius
+        
+        .projects-info
+            flex: 1
+            padding: 0.8rem
 
-    .projects-card 
-        margin: 2rem 1rem 8rem
-        align-items: center
-        margin: 0 .8rem
-        width: 100%
-        display: flex
+            h2
+                color: variables.$text-color
+                text-align: center
+                margin: 1.3rem 0
 
-        @media (max-width: 768px) 
-            margin-bottom: 4rem
-        
-    .projects-info 
-        width: 45%
-        min-width: 250px
+            p
+                color: variables.$text-color
+                line-height: 1.4rem
+                margin-bottom: 1rem
+                text-align: justify
 
-        h2, a 
-            display: flex
-            justify-content: center
+            a
+                background-image: linear-gradient(90deg, rgba(250, 82, 82, 1) 0%, rgba(221, 36, 118, 1) 98%)
+                -webkit-background-clip: text
+                -moz-background-clip: text
+                background-clip: text
+                color: transparent
+                display: block
+                text-align: center
+            
+            img
+                width: 100%
+                height: auto
+                border-radius: variables.$container-border-radius
         
-        span 
-            font-weight: bold
-        
-        h2 
-            color: variables.$text-color
-            margin-bottom: 2rem
-        
-        p 
-            color: variables.$text-color-secondary
-            line-height: 1.5rem
-            margin-bottom: 0.5rem
-            text-align: justify
+        .card-reverse
+            flex-direction: row-reverse
+            
+
     
-        a 
-            background-image: linear-gradient(90deg, rgba(250, 82, 82, 1) 0%, rgba(221, 36, 118, 1) 98%)
-            -webkit-background-clip: text
-            -moz-background-clip: text
-            background-clip: text
-            color: transparent
-        
-    .card-reverse 
-        flex-direction: row-reverse
-    .m-1 
-        margin-bottom: 2rem
-    
-
