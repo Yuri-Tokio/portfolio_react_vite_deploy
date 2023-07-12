@@ -7,6 +7,11 @@
     margin: 3rem
     padding: 2rem
     max-width: 100%
+    min-width: 665px
+
+    @media screen and (max-width: 768px)
+        margin: .5rem
+        padding: .5rem
 
     .title
         color: variables.$text-color
@@ -46,7 +51,7 @@
         img
             width: 100%
             height: auto
-            padding: 2rem
+            border-radius: variables.$container-border-radius
 
     @media (max-width: 1302px)
 
@@ -61,8 +66,9 @@
             width: 100%
             height: auto
             padding: 2rem
+            border-radius: variables.$container-border-radius
 
-    @media (max-width: 999px)
+    @media (max-width: 768px)
 
         .certificados-grid div
             width: 100%
@@ -72,10 +78,6 @@
             justify-content: center
 
         img
-            width: 80%
-            height: auto
-    
-    @media (max-width: 500px)
-        img
             width: 100%
             height: auto
+            border-radius: variables.$container-border-radius
