@@ -18,11 +18,11 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: "certificados",
+    path: "portfolio_react_vite_deploy/certificados",
     element: <CertificadosPage />,
   },
   {
-    path: "projects",
+    path: "portfolio_react_vite_deploy/projects",
     element: <ProjectsPage />,
   },
 ])

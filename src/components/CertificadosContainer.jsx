@@ -6,11 +6,11 @@ const CertificadosContainer = () => {
   const navigate = useNavigate();
 
   const goToCertificados = () =>{
-    navigate("/certificados");
+    navigate("/portfolio_react_vite_deploy/certificados");
   }
 
   const goToProjects = () =>{
-    navigate("/projects");
+    navigate("/portfolio_react_vite_deploy/projects");
   }
 
   return (
