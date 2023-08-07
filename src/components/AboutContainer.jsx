@@ -9,7 +9,7 @@ const AboutContainer = () => {
           Sou apaixonado por tecnologia e ser reconhecido por gerar soluções eficientes que impulsionem projetos.
         </p>
         <p>
-        Com mais de 3 anos de experiência em Desenvolvimento Web, trabalhei com ASP.NET CORE, Node Js, React, SASS, Postman e GIT para criar soluções robustas e escaláveis que atendam às necessidades dos clientes.
+        Com mais de 3 anos de experiência em desenvolvimento web, trabalhei com ASP.NET CORE, Node Js, React, SASS, Postman e GIT para criar soluções robustas, escaláveis e que atendam as necessidades dos clientes.
         </p>
       </div>
     </section>
