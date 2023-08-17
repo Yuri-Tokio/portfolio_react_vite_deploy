@@ -2,7 +2,7 @@ import SocialNetworkContainer from "./SocialNetworkContainer";
 import InformationContainer from "./InformationContainer";
 
 import Perfil from "../img/eu_perfil_jun_2023.jpg";
-import CV from "../pdf/CV Yuri Tokio Template.pdf"
+import CV from "../pdf/CV Yuri Tokio.pdf"
 
 import "../styles/components/sidebar.sass";
 
