@@ -5,7 +5,7 @@ import Wordpress from "../img/certificados/Wordpress_na_pratica.png";
 import Python from "../img/certificados/Python.png";
 import Gestao_Infraestrutura from "../img/certificados/Gestao_de_Infraestrutura_de_TI.png";
 import FormacaoSocial_Sustentabilidade from "../img/certificados/Formacao_Social_e_Sustentabilidade.png";
-import Computacao_Marketing from "../img/certificados/Computacao_Cognitiva_Aplicada_ao_Marketing.png";
+import Python_Intensive from "../img/certificados/Yuri Tokio Tabuti Santos - Python.jpg";
 import Business_Analyst from "../img/certificados/Business_Analyst.jpg";
 import Mastering_Bots from "../img/certificados/Mastering_Bots.jpg";
 import Leadership_Communication from "../img/certificados/Leadership_Communication.png";
@@ -35,12 +35,12 @@ const CertificadosPage = () => {
                     <h2>Gestão de Infraestrutura de T.I</h2>
                 </div>
                 <div className="certificados-card">
-                    <img src={FormacaoSocial_Sustentabilidade} alt="Formacao Social e Sustentabilidade"></img>
-                    <h2>Formação Social e Sustentabilidade</h2>
+                    <img src={Python_Intensive} alt="Jornada Python Hashtag"></img>
+                    <h2>Jornada Python Hashtag</h2>
                 </div>
                 <div className="certificados-card">
-                    <img src={Computacao_Marketing} alt="Computacao Cognitiva Aplicada ao Marketing"></img>
-                    <h2>Computação Cognitiva aplicada ao Marketing</h2>
+                    <img src={FormacaoSocial_Sustentabilidade} alt="Formacao Social e Sustentabilidade"></img>
+                    <h2>Formação Social e Sustentabilidade</h2>
                 </div>
                 <div className="certificados-card">
                     <img src={Business_Analyst} alt="Business Analyst"></img>
