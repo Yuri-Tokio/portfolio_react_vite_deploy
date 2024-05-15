@@ -11,7 +11,7 @@ const AboutContainer = () => {
         <p>
         Com mais de 3 anos de experiência em desenvolvimento web, trabalhei com ASP.NET CORE, Node Js, React, SASS, Postman e GIT.
         </p>
-        <p>Atualmente, me aprimoro em Python, utilizando bibliotecas como Flask e Django para desenvolver aplicativos web, onde implemento práticas de programação que asseguram desempenho e escalabilidade.</p>
+        <p>Atualmente, me aprimoro em Python, utilizando bibliotecas como Django para desenvolver aplicativos web, onde implemento práticas de programação que asseguram desempenho e escalabilidade.</p>
       </div>
     </section>
   );

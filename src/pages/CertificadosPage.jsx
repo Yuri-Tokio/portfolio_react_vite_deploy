@@ -23,36 +23,36 @@ const CertificadosPage = () => {
                     <h2>Desenvolvimento Web Responsivo</h2>
                 </div>
                 <div className="certificados-card">
+                    <img src={Python_Intensive} alt="Jornada Python Hashtag"></img>
+                    <h2>Jornada Python Hashtag</h2>
+                </div>
+                <div className="certificados-card">
                     <img src={Wordpress} alt="Wordpress na pratica"></img>
                     <h2>Wordpress</h2>
                 </div>
                 <div className="certificados-card">
-                    <img src={Python} alt="Python"></img>
-                    <h2>Python</h2>
+                    <img src={Mastering_Bots} alt="Mastering Bots"></img>
+                    <h2>Mastering Bots</h2>
                 </div>
                 <div className="certificados-card">
                     <img src={Gestao_Infraestrutura} alt="Gestao de Infraestrutura de TI"></img>
                     <h2>Gestão de Infraestrutura de T.I</h2>
                 </div>
                 <div className="certificados-card">
-                    <img src={Python_Intensive} alt="Jornada Python Hashtag"></img>
-                    <h2>Jornada Python Hashtag</h2>
+                    <img src={Business_Analyst} alt="Business Analyst"></img>
+                    <h2>Business Analyst</h2>
                 </div>
                 <div className="certificados-card">
                     <img src={FormacaoSocial_Sustentabilidade} alt="Formacao Social e Sustentabilidade"></img>
                     <h2>Formação Social e Sustentabilidade</h2>
                 </div>
                 <div className="certificados-card">
-                    <img src={Business_Analyst} alt="Business Analyst"></img>
-                    <h2>Business Analyst</h2>
+                    <img src={Python} alt="Python"></img>
+                    <h2>Python</h2>
                 </div>
                 <div className="certificados-card">
                     <img src={Leadership_Communication} alt="Leadership Communication"></img>
                     <h2>Comunicação de Liderança</h2>
-                </div>
-                <div className="certificados-card">
-                    <img src={Mastering_Bots} alt="Mastering Bots"></img>
-                    <h2>Mastering Bots</h2>
                 </div>
             </div>
         </section>

@@ -7,15 +7,16 @@ import {
   DiNodejsSmall,
   DiPostgresql,
   DiReact,
+  DiPython,
 } from "react-icons/di";
 
 import {SiDotnet} from "react-icons/si"
 
 const technologies = [
   { id: "js", name: "JavaScript", text:"Linguagem versátil para criar interatividade e funcionalidade.", icon: <DiJsBadge /> },
-  { id: "sass", name: "SASS", text:"Permite escrever CSS de forma mais eficiente e organizada.", icon: <DiSass /> },
-  { id: "react", name: "React", text:"Biblioteca moderna e responsiva baseada em componentes", icon: <DiReact /> },
   { id: "dotnet", name: ".NET", text:"Framework útil para criar aplicativos e serviços web.", icon: <SiDotnet /> },
+  { id: "react", name: "React", text:"Biblioteca moderna e responsiva baseada em componentes", icon: <DiReact /> },
+  { id: "python", name: "Python", text:"focado em desenvolvimento web, automação e inteligência artificial.", icon: <DiPython /> },
   { id: "node", name: "Node.js", text:"Ambiente que possibilita criar back-end escalável e de alto desempenho.", icon: <DiNodejsSmall /> },
   { id: "postgresql", name: "PostgreSQL", text:"Gerenciamento de banco de dados relacional de código aberto.", icon: <DiPostgresql /> },
 ];
