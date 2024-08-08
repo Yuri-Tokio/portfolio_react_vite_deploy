@@ -1,38 +1,45 @@
 name: tokiodev.com deployment
 
 on:
-    push:
-        branches: [main]
-    
-    workflow_dispatch:
+  push:
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-          - name: Using Node.js
-            uses: actions/setup-node@v2
-            with:
-              node-version: 20.
-          - name: build aplication
-            run: npm run build
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v2
+      
+      - name: Configurar Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
 
-    deploy-development:
-        runs-on: ubuntu-latest
-        environment: 
-            name: development
-            url: https://tokiodev.com
-        needs: build
-        steps:
-            - name: Repo Checkout
-              uses: actions/chekout@v3
-            - name: Hostinger Deployment
-              uses: easingthemes/ssh-deploy@main
-              with:
-                SSH_PRIVATE_KEY: ${{secrets.SERVER_SSH_KEY}}
-                ARGS: "-rlgoDzvc --delete"
-                SOURCE: "dist/"
-                REMOTE_HOST: ${{vars.REMOTE_HOST}}
-                REMOTE_USER: ${{vars.REMOTE_USER}}
-                REMOTE_PORT: ${{vars.REMOTE_PORT}}
-                TARGET: ./domains/tokiodev.com/public_html/
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+  deploy-development:
+    runs-on: ubuntu-latest
+    environment: 
+      name: portfolio_react_vite_deploy
+      url: https://tokiodev.com
+    needs: build
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v2
+
+      - name: Hostinger Deployment
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          ARGS: "-rlgoDzvc --delete"
+          SOURCE: "dist/"
+          REMOTE_HOST: ${{ vars.REMOTE_HOST }}
+          REMOTE_USER: ${{ vars.REMOTE_USER }}
+          REMOTE_PORT: ${{ vars.REMOTE_PORT }}
+          TARGET: "./domains/tokiodev.com/public_html/"
