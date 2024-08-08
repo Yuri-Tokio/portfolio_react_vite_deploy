@@ -5,7 +5,7 @@
   Este projeto faz uma breve apresentação sobre mim e disponibiliza links para meus `Projetos`, `Certificados` e `Currículo`
 
 # Link do projeto em produção
-  https://yuri-tokio.github.io/portfolio_react_vite_deploy/
+  https://tokiodev.com
 
 # Baixando dependências 
   npm i

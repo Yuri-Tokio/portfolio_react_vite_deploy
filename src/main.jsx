@@ -14,15 +14,15 @@ import ProjectsPage from './pages/ProjectsPage';
 
 const router = createBrowserRouter([
   {
-    path: "/portfolio_react_vite_deploy/",
+    path: "/",
     element: <HomePage />,
   },
   {
-    path: "portfolio_react_vite_deploy/certificados",
+    path: "/certificados",
     element: <CertificadosPage />,
   },
   {
-    path: "portfolio_react_vite_deploy/projects",
+    path: "/projects",
     element: <ProjectsPage />,
   },
 ])
