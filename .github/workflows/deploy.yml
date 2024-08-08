@@ -1,4 +1,4 @@
-name: portfolio.tokiodev.com deployment
+name: tokiodev.com deployment
 
 on:
     push:
@@ -10,18 +10,22 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-          - name: Build
+          - name: Using Node.js
+            uses: actions/setup-node@v2
+            with:
+              node-version: 20.
+          - name: build aplication
             run: npm run build
 
     deploy-development:
         runs-on: ubuntu-latest
         environment: 
-            name: portfolio_react_vite_deploy
+            name: development
             url: https://tokiodev.com
         needs: build
         steps:
-            - name: portfolio_react_vite_deploy
-              uses: actions/chekout@v1
+            - name: Repo Checkout
+              uses: actions/chekout@v3
             - name: Hostinger Deployment
               uses: easingthemes/ssh-deploy@main
               with:
