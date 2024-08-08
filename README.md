@@ -12,3 +12,6 @@
 
 # Rodando o projeto
 No terminal `npm run dev`
+
+# github actions falhou.
+
