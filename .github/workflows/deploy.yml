@@ -11,7 +11,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
           - name: Build
-            run: npm run dev
+            run: npm run build
 
     deploy-development:
         runs-on: ubuntu-latest
