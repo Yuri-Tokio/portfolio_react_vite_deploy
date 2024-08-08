@@ -26,7 +26,7 @@ jobs:
   deploy-development:
     runs-on: ubuntu-latest
     environment: 
-      name: portfolio_react_vite_deploy
+      name: acessTokioDev
       url: https://tokiodev.com
     needs: build
     steps:

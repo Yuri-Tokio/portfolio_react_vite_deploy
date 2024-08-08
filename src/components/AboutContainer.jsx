@@ -1,4 +1,4 @@
-import "./../styles/components/AboutContainer.sass"
+import './../styles/components/AboutContainer.sass';
 
 const AboutContainer = () => {
   return (
