@@ -16,11 +16,11 @@ jobs:
     deploy-development:
         runs-on: ubuntu-latest
         environment: 
-            name: development
+            name: portfolio_react_vite_deploy
             url: https://tokiodev.com
         needs: build
         steps:
-            - name: Repo Checkout
+            - name: portfolio_react_vite_deploy
               uses: actions/chekout@v1
             - name: Hostinger Deployment
               uses: easingthemes/ssh-deploy@main
