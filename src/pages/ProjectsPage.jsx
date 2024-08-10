@@ -55,8 +55,8 @@ const ProjectsPage = () => {
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi tempora, exercitationem vitae nesciunt iure corporis ipsum ipsam animi quam accusamus perspiciatis neque quisquam iste veniam voluptatibus cum totam id quia atque facilis ut obcaecati error. Aperiam numquam perferendis quasi porro veritatis, cumque, aliquam maiores magnam rerum est harum nam itaque.</p>
                         <p><span>Tecnologias utilizadas:</span></p>
                         <div className="linksProjetos">
-                            <a href="https://github.com/Yuri-Tokio/movies_lib" target="_blank">Ver Repositório</a>
-                            <a href="https://yuri-tokio.github.io/movies_lib/" target="_blank">Ver Projeto</a>
+                            <a href="#">Ver Repositório</a>
+                            <a href="#">Ver Projeto</a>
                         </div>
                     </div>
                 </div>
