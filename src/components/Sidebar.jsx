@@ -2,7 +2,7 @@ import SocialNetworkContainer from "./SocialNetworkContainer";
 import InformationContainer from "./InformationContainer";
 
 import Perfil from "../img/eu_perfil_jun_2023.jpg";
-import CV from "../pdf/CV_Yuri_Tokio.pdf"
+import CV from "../pdf/Yuri_Tokio_CV.pdf";
 
 import "../styles/components/sidebar.sass";
 
@@ -13,9 +13,9 @@ const Sidebar = () => {
       <p className="title">Desenvolvedor de Software</p>
       <SocialNetworkContainer />
       <InformationContainer />
-      <a href={CV} target="_blank"  
+      <a href={CV} target="_blank"
         className="btn cvx">
-        Download currículo
+        Curriculum Vitae (PDF)
       </a>
     </aside>
   );
